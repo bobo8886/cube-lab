@@ -7,7 +7,9 @@
 
 **从看懂公式，到流畅复原。**
 
-一个可以旋转、播放、逐步拆解的中文 CFOP 速拧学习实验室。
+**简体中文** · [English](README.en.md)
+
+一个可以旋转、播放、逐步拆解的中英双语 CFOP 速拧学习实验室。
 
 [![119 个完整案例](docs/images/badge-cases.svg)](#-完整的-cfop-学习路线)
 [![Three.js 0.170.0](docs/images/badge-three.svg)](docs/DEVELOPMENT.md)
@@ -26,6 +28,8 @@
 ![轻拧桌面首页：绿色主题、真实 3D 魔方与 CFOP 学习入口](docs/images/homepage.png)
 
 ## ✨ 让公式变成看得见的动作
+
+首次进入网站弹窗选择简体中文或 English，默认中文；选择后自动记住。顶部语言按钮可随时切换，公式播放进度、学习标记与计时记录保持不变。
 
 | 功能 | 你可以这样学 |
 | --- | --- |

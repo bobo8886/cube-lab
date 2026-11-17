@@ -51,4 +51,6 @@ Three.js 0.170.0 与 OrbitControls 已放在 vendor，无运行时 CDN 依赖。
 
 ## GitHub Pages 发布
 
+中英翻译位于 `dist/i18n.js`，英文案例解析位于 `dist/lesson-en.js`。新增文案后运行 `node verify-i18n.mjs` 检查静态文案、全部案例的翻译覆盖与状态不变性。语言偏好使用独立的 `cube-language` 存储键，首次访问默认中文，存储不可用时仍可正常使用。
+
 推送到 `main` 后，`.github/workflows/pages.yml` 自动校验公式并将 `dist/` 部署到 https://bobo8886.github.io/cube-lab/ 。网站无需登录。

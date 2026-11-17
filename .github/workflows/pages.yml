@@ -20,6 +20,8 @@ jobs:
       - uses: actions/checkout@v6
       - name: Verify CFOP cases
         run: node verify.mjs
+      - name: Verify language coverage
+        run: node verify-i18n.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
