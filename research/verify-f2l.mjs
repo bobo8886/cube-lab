@@ -13,7 +13,7 @@ const position=p=>p[1]===0?'右前槽':p[1]===-1?'右前槽':(p[2]===1?'前':p[2
 for(const c of data){let s=setup(c.alg);for(const p of baseline)if(p.p[1]<=0&&!['DFR','FR'].includes(id(p))){assert.equal(key(s.find(q=>id(p)===id(q))),key(p),'lower piece moved '+c.number+' '+id(p));}const k=canonical(structuredClone(s));assert.ok(!seen.has(k),'duplicate '+c.number);assert.notEqual(k,canonical(solved()),'solved case');seen.add(k);
 const corner=s.find(p=>id(p)==='DFR'),edge=s.find(p=>id(p)==='FR');
 c.group=corner.p[1]===1?(edge.p[1]===1?'角棱都在顶层':'角在顶层 · 棱在槽内'):(edge.p[1]===1?'角在槽内 · 棱在顶层':'角棱都在槽内');
-c.recognize=`黄绿红角位于${position(corner.p)}，黄色朝${names[corner.stickers.find(t=>t.face==='D').n.join(',')]}；绿红棱位于${position(edge.p)}，绿色朝${names[edge.stickers.find(t=>t.face==='F').n.join(',')]}。目标是右前槽。`;
+c.recognize=`白绿红角位于${position(corner.p)}，白色朝${names[corner.stickers.find(t=>t.face==='D').n.join(',')]}；绿红棱位于${position(edge.p)}，绿色朝${names[edge.stickers.find(t=>t.face==='F').n.join(',')]}。目标是右前槽。`;
 for(const t of tokens(c.alg))move(s,t);for(const f of ['U','D','R','L','F','B'])assert.ok(faceGrid(s,f).every(v=>v===f),'not solved '+c.number);
 }
 fs.writeFileSync('research/f2l-cases.json',JSON.stringify(data,null,2));console.log('PASS: 41 distinct non-solved F2L pair cases modulo U, cross + other three slots preserved; all inverse setups solved.');
