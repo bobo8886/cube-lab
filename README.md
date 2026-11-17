@@ -1,6 +1,6 @@
 # 方序 · CUBE LAB
 
-中文 CFOP 速拧入门网页。包含 16 个两步 OLL / PLL 核心公式，另有十字与左右 F2L 插入示例，共 19 个可播放案例。
+中文 CFOP 速拧教学网页。完整库包括 57 OLL + 21 PLL + 41 F2L = 119 个非复原案例；另外保留两步法入门模式的 19 个教学示例（与完整库有重叠）。默认展示完整库。
 
 ## 本地运行
 
@@ -8,7 +8,7 @@
 
 ## 功能
 
-- Three.js 真实分层旋转，支持 R/L/U/D/F/B、M 中层、r/f 宽转、逆转、180°。
+- Three.js 真实分层旋转，支持 R/L/U/D/F/B、M/E/S 中层、全部六面宽转、x/y/z 转体、逆转、180°。
 - 案例由逆公式生成，逐步、回退、暂停、重播、速度调整、拖动视角。
 - 同一状态模型生成六面展开图；绿色前面、红色右面、黄色顶面。
 - 分类、搜索、学习标记、练习计时。记录保存在浏览器本地，不上传。
@@ -28,14 +28,19 @@ Three.js 0.170.0 与 OrbitControls 已放在 vendor，无运行时 CDN 依赖。
 
 ## 教学范围
 
-本页为入门核心库，不是完整 57 OLL / 21 PLL。F2L 的两个示例展示已配对角棱归槽，完整直觉 F2L 需要结合参考视频练习找块与配对。OLL 的逆操作演示会最终得到完整复原，但实际 OLL 只保证顶面朝向正确，仍需 PLL。
+完整库按状态去重核验：57 个 OLL（忽略 U 调整）、21 个 PLL（忽略 U 调整与 y 视角）、41 个 F2L（忽略 U 调整）。F2L 编号采用 Cubeathon 源站顺序，并非跨教程统一编号。完整直觉 F2L 仍建议结合参考视频练习找块与配对。OLL 的逆操作演示会最终得到完整复原，但实际 OLL 只保证顶面朝向正确，仍需 PLL。
 
 参考资料（核对于 2026-11-17）：
 
 - https://jperm.net/3x3/cfop
+- https://jperm.net/algs/oll
+- https://jperm.net/algs/pll
+- https://cubeathon.com/algorithms/f2l
 - https://jperm.net/algs/2lookoll
 - https://jperm.net/algs/2lookpll
 - https://cubeskills.com/uploads/pdf/tutorials/oll-algorithms.pdf
 - https://cubeskills.com/uploads/pdf/tutorials/2-look-last-layer.pdf
 
 中文解析、网页设计与状态演示独立编写，公式采用标准魔方记号。
+
+完整公式数据来自 research/*-cases.json；执行 node build-catalog.mjs 生成 dist/catalog.js。动画统一白底黄顶起始握持，必要时在原公式末尾补回转体，并在解析注明。

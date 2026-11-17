@@ -1,4 +1,5 @@
-export const cases = [
+import {fullCases} from './catalog.js';
+export const beginnerCases = [
 ['cross','Cross','十字练习','F2','观察白绿棱。先让它与绿色中心对齐，再用 F2 送到底层。','这只是一个单棱示例。真实十字需观察四条白色棱块，白色在底部，侧面颜色也要对齐中心。'],
 ['pair','F2L','右槽插入',"U R U' R'",'一对已经配好的角棱，送入右前槽。','先用 U 将配对移到插入位置；R 打开槽位，U\' 把配对送入，R\' 关回。已配好的角棱要一起移动。'],
 ['pair-left','F2L','左槽插入',"U' L' U L",'与右槽插入镜像的基础情况。','U\' 调整配对位置，L\' 打开左前槽，U 将配对送入，L 关闭。先理解配对，再逐渐减少转体。'],
@@ -18,4 +19,5 @@ export const cases = [
 ['ub','PLL','Ub Perm · 反向三棱',"R2 U R U R' U' R' U' R' U R'",'与 Ua 循环方向相反；按侧面中心颜色判断目标位置。','同样把已归位的棱放背面。Ua 与 Ub 互为逆过程，可以成组练习。'],
 ['h-perm','PLL','H Perm · 对棱交换',"M2 U M2 U2 M2 U M2",'四条棱都不正确，前后、左右各自成对交换。','M 是左右面之间的中层，方向跟 L 相同。这里全是 M2，不必纠结 180° 的正反方向。'],
 ['z-perm','PLL','Z Perm · 邻棱交换',"M2 U M2 U M' U2 M2 U2 M' U2",'四条顶棱两两相邻交换；按展开图匹配方向。','先辨认两组相邻交换。末尾 U2 是本示例的顶层对齐动作（AUF），不能漏做。']
-].map(([id,stage,name,alg,recognize,explain])=>({id,stage,name,alg,recognize,explain}));
+].map(([id,stage,name,alg,recognize,explain])=>({id,stage,name,alg,recognize,explain,scope:'beginner'}));
+export const cases=[...beginnerCases,...fullCases];

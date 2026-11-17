@@ -1,0 +1,330 @@
+[
+  {
+    "number": 1,
+    "alg": "U R U' R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_1",
+    "sourceId": "f2l_1",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝前；绿红棱位于右顶层，绿色朝上。目标是右前槽。"
+  },
+  {
+    "number": 2,
+    "alg": "U' F' U F",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_2",
+    "sourceId": "f2l_2",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝右；绿红棱位于前顶层，绿色朝前。目标是右前槽。"
+  },
+  {
+    "number": 3,
+    "alg": "F' U' F",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_3",
+    "sourceId": "f2l_3",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝前；绿红棱位于左顶层，绿色朝左。目标是右前槽。"
+  },
+  {
+    "number": 4,
+    "alg": "R U R' U' R U R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_4",
+    "sourceId": "f2l_4",
+    "group": "角在槽内 · 棱在顶层",
+    "recognize": "白绿红角位于右前槽，白色朝右；绿红棱位于右顶层，绿色朝上。目标是右前槽。"
+  },
+  {
+    "number": 5,
+    "alg": "F' U2 F U F' U' F",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_up_front_ok",
+    "sourceId": "f2l_top_up_front_ok",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝上；绿红棱位于前顶层，绿色朝前。目标是右前槽。"
+  },
+  {
+    "number": 6,
+    "alg": "R U R' U2 R U R' U' R U R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_up_front_flip",
+    "sourceId": "f2l_top_up_front_flip",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝上；绿红棱位于前顶层，绿色朝上。目标是右前槽。"
+  },
+  {
+    "number": 7,
+    "alg": "F U R U' R' F' R U' R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_up_right_ok",
+    "sourceId": "f2l_top_up_right_ok",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝上；绿红棱位于右顶层，绿色朝右。目标是右前槽。"
+  },
+  {
+    "number": 8,
+    "alg": "R U2 R' U' R U R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_up_right_flip",
+    "sourceId": "f2l_top_up_right_flip",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝上；绿红棱位于右顶层，绿色朝上。目标是右前槽。"
+  },
+  {
+    "number": 9,
+    "alg": "F' U' F U' F' U F",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_up_back_ok",
+    "sourceId": "f2l_top_up_back_ok",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于后左顶层，白色朝上；绿红棱位于前顶层，绿色朝前。目标是右前槽。"
+  },
+  {
+    "number": 10,
+    "alg": "R U2 R' U R U' R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_up_back_flip",
+    "sourceId": "f2l_top_up_back_flip",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前左顶层，白色朝上；绿红棱位于右顶层，绿色朝上。目标是右前槽。"
+  },
+  {
+    "number": 11,
+    "alg": "F' U2 F U' F' U F",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_up_left_ok",
+    "sourceId": "f2l_top_up_left_ok",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于后右顶层，白色朝上；绿红棱位于前顶层，绿色朝前。目标是右前槽。"
+  },
+  {
+    "number": 12,
+    "alg": "R U' R' U2 R U R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_up_left_flip",
+    "sourceId": "f2l_top_up_left_flip",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝上；绿红棱位于左顶层，绿色朝上。目标是右前槽。"
+  },
+  {
+    "number": 13,
+    "alg": "U F' U F U' F' U' F",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_front_front_ok",
+    "sourceId": "f2l_top_front_front_ok",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝前；绿红棱位于前顶层，绿色朝前。目标是右前槽。"
+  },
+  {
+    "number": 14,
+    "alg": "F' U F U2 R U R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_front_front_flip",
+    "sourceId": "f2l_top_front_front_flip",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝前；绿红棱位于前顶层，绿色朝上。目标是右前槽。"
+  },
+  {
+    "number": 15,
+    "alg": "U' R U2 R' U F' U' F",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_front_right_ok",
+    "sourceId": "f2l_top_front_right_ok",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝前；绿红棱位于右顶层，绿色朝右。目标是右前槽。"
+  },
+  {
+    "number": 16,
+    "alg": "R U' R' U F' U' F",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_front_back_ok",
+    "sourceId": "f2l_top_front_back_ok",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于后右顶层，白色朝右；绿红棱位于左顶层，绿色朝左。目标是右前槽。"
+  },
+  {
+    "number": 17,
+    "alg": "R U R' U2 R U' R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_front_back_flip",
+    "sourceId": "f2l_top_front_back_flip",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于后右顶层，白色朝右；绿红棱位于左顶层，绿色朝上。目标是右前槽。"
+  },
+  {
+    "number": 18,
+    "alg": "U' R U2 R' U2 R U' R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_front_left_flip",
+    "sourceId": "f2l_top_front_left_flip",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝前；绿红棱位于左顶层，绿色朝上。目标是右前槽。"
+  },
+  {
+    "number": 19,
+    "alg": "U F' U2 F U' R U R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_right_front_flip",
+    "sourceId": "f2l_top_right_front_flip",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝右；绿红棱位于前顶层，绿色朝上。目标是右前槽。"
+  },
+  {
+    "number": 20,
+    "alg": "R U' R' U2 F' U' F",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_right_right_ok",
+    "sourceId": "f2l_top_right_right_ok",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝右；绿红棱位于右顶层，绿色朝右。目标是右前槽。"
+  },
+  {
+    "number": 21,
+    "alg": "U' R U' R' U R U R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_right_right_flip",
+    "sourceId": "f2l_top_right_right_flip",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝右；绿红棱位于右顶层，绿色朝上。目标是右前槽。"
+  },
+  {
+    "number": 22,
+    "alg": "U F' U2 F U2 F' U F",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_right_back_ok",
+    "sourceId": "f2l_top_right_back_ok",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝右；绿红棱位于后顶层，绿色朝后。目标是右前槽。"
+  },
+  {
+    "number": 23,
+    "alg": "R U R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_right_back_flip",
+    "sourceId": "f2l_top_right_back_flip",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝右；绿红棱位于后顶层，绿色朝上。目标是右前槽。"
+  },
+  {
+    "number": 24,
+    "alg": "U F' U' F U2 F' U F",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_right_left_ok",
+    "sourceId": "f2l_top_right_left_ok",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝右；绿红棱位于左顶层，绿色朝左。目标是右前槽。"
+  },
+  {
+    "number": 25,
+    "alg": "U F' U F U' R U R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_right_left_flip",
+    "sourceId": "f2l_top_right_left_flip",
+    "group": "角棱都在顶层",
+    "recognize": "白绿红角位于前右顶层，白色朝右；绿红棱位于左顶层，绿色朝上。目标是右前槽。"
+  },
+  {
+    "number": 26,
+    "alg": "R U R' U' R U R' U' R U R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_up_slot_ok",
+    "sourceId": "f2l_top_up_slot_ok",
+    "group": "角在顶层 · 棱在槽内",
+    "recognize": "白绿红角位于前右顶层，白色朝上；绿红棱位于右前槽，绿色朝前。目标是右前槽。"
+  },
+  {
+    "number": 27,
+    "alg": "R U' R' U F' U F",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_up_slot_flip",
+    "sourceId": "f2l_top_up_slot_flip",
+    "group": "角在顶层 · 棱在槽内",
+    "recognize": "白绿红角位于前右顶层，白色朝上；绿红棱位于右前槽，绿色朝右。目标是右前槽。"
+  },
+  {
+    "number": 28,
+    "alg": "U' F' U' F U2 F' U' F",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_front_slot_ok",
+    "sourceId": "f2l_top_front_slot_ok",
+    "group": "角在顶层 · 棱在槽内",
+    "recognize": "白绿红角位于前右顶层，白色朝前；绿红棱位于右前槽，绿色朝前。目标是右前槽。"
+  },
+  {
+    "number": 29,
+    "alg": "R U R' F R' F' R",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_front_slot_flip",
+    "sourceId": "f2l_top_front_slot_flip",
+    "group": "角在顶层 · 棱在槽内",
+    "recognize": "白绿红角位于后左顶层，白色朝后；绿红棱位于右前槽，绿色朝右。目标是右前槽。"
+  },
+  {
+    "number": 30,
+    "alg": "U R U R' U2 R U R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_right_slot_ok",
+    "sourceId": "f2l_top_right_slot_ok",
+    "group": "角在顶层 · 棱在槽内",
+    "recognize": "白绿红角位于前右顶层，白色朝右；绿红棱位于右前槽，绿色朝前。目标是右前槽。"
+  },
+  {
+    "number": 31,
+    "alg": "U F' U' F U' R U R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_top_right_slot_flip",
+    "sourceId": "f2l_top_right_slot_flip",
+    "group": "角在顶层 · 棱在槽内",
+    "recognize": "白绿红角位于前右顶层，白色朝右；绿红棱位于右前槽，绿色朝右。目标是右前槽。"
+  },
+  {
+    "number": 32,
+    "alg": "R U' R' F R' F' R",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_slot_down_top_ok",
+    "sourceId": "f2l_slot_down_top_ok",
+    "group": "角在槽内 · 棱在顶层",
+    "recognize": "白绿红角位于右前槽，白色朝下；绿红棱位于左顶层，绿色朝左。目标是右前槽。"
+  },
+  {
+    "number": 33,
+    "alg": "U' R' F R F' R U R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_slot_down_top_flip",
+    "sourceId": "f2l_slot_down_top_flip",
+    "group": "角在槽内 · 棱在顶层",
+    "recognize": "白绿红角位于右前槽，白色朝下；绿红棱位于右顶层，绿色朝上。目标是右前槽。"
+  },
+  {
+    "number": 34,
+    "alg": "F' U' F U F' U' F",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_slot_front_top_ok",
+    "sourceId": "f2l_slot_front_top_ok",
+    "group": "角在槽内 · 棱在顶层",
+    "recognize": "白绿红角位于右前槽，白色朝前；绿红棱位于前顶层，绿色朝前。目标是右前槽。"
+  },
+  {
+    "number": 35,
+    "alg": "R U' R' U R U' R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_slot_front_top_flip",
+    "sourceId": "f2l_slot_front_top_flip",
+    "group": "角在槽内 · 棱在顶层",
+    "recognize": "白绿红角位于右前槽，白色朝前；绿红棱位于右顶层，绿色朝上。目标是右前槽。"
+  },
+  {
+    "number": 36,
+    "alg": "R U R' U' F R' F' R",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_slot_right_top_ok",
+    "sourceId": "f2l_slot_right_top_ok",
+    "group": "角在槽内 · 棱在顶层",
+    "recognize": "白绿红角位于右前槽，白色朝右；绿红棱位于前顶层，绿色朝前。目标是右前槽。"
+  },
+  {
+    "number": 37,
+    "alg": "R2 U2 F R2 F' U2 R' U R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_slot_down_slot_flip",
+    "sourceId": "f2l_slot_down_slot_flip",
+    "group": "角棱都在槽内",
+    "recognize": "白绿红角位于右前槽，白色朝下；绿红棱位于右前槽，绿色朝右。目标是右前槽。"
+  },
+  {
+    "number": 38,
+    "alg": "R U' R' U' R U R' U2 R U' R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_slot_front_slot_ok",
+    "sourceId": "f2l_slot_front_slot_ok",
+    "group": "角棱都在槽内",
+    "recognize": "白绿红角位于右前槽，白色朝前；绿红棱位于右前槽，绿色朝前。目标是右前槽。"
+  },
+  {
+    "number": 39,
+    "alg": "U R U' R' U F' U' F U' F' U' F",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_slot_front_slot_flip",
+    "sourceId": "f2l_slot_front_slot_flip",
+    "group": "角棱都在槽内",
+    "recognize": "白绿红角位于右前槽，白色朝前；绿红棱位于右前槽，绿色朝右。目标是右前槽。"
+  },
+  {
+    "number": 40,
+    "alg": "R U' R' U R U2 R' U R U' R'",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_slot_right_slot_ok",
+    "sourceId": "f2l_slot_right_slot_ok",
+    "group": "角棱都在槽内",
+    "recognize": "白绿红角位于右前槽，白色朝右；绿红棱位于右前槽，绿色朝前。目标是右前槽。"
+  },
+  {
+    "number": 41,
+    "alg": "R U R' U' R U' R' U2 F' U' F",
+    "source": "https://cubeathon.com/algorithms/f2l#f2l_slot_right_slot_flip",
+    "sourceId": "f2l_slot_right_slot_flip",
+    "group": "角棱都在槽内",
+    "recognize": "白绿红角位于右前槽，白色朝右；绿红棱位于右前槽，绿色朝右。目标是右前槽。"
+  }
+]
