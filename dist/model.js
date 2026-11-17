@@ -1,4 +1,4 @@
-export const colors={R:'#e56862',L:'#f2ad67',U:'#f3df7b',D:'#ffffff',F:'#6cb98f',B:'#7599d1'};
+export const colors={R:'#e34d45',L:'#f59b44',U:'#f4d94f',D:'#ffffff',F:'#43ae74',B:'#4f83c9'};
 export function solved(){const pieces=[];for(let x=-1;x<=1;x++)for(let y=-1;y<=1;y++)for(let z=-1;z<=1;z++){if(!x&&!y&&!z)continue;let stickers=[];for(const [face,n] of Object.entries({R:[1,0,0],L:[-1,0,0],U:[0,1,0],D:[0,-1,0],F:[0,0,1],B:[0,0,-1]}))if(x*n[0]+y*n[1]+z*n[2]===1)stickers.push({face,n});pieces.push({p:[x,y,z],stickers});}return pieces;}
 export const tokens=alg=>alg.replace(/[()\[\]]/g,' ').trim().split(/\s+/).filter(Boolean);
 export const invert=t=>t.includes('2')?t:t.includes("'")?t[0]:t+"'";
