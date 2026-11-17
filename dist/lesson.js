@@ -1,4 +1,4 @@
-import {getLanguage} from './i18n.js';
+import {getLanguage} from './i18n.js?v=20261117-cards';
 import {lessonEnglish} from './lesson-en.js';
 import {faceGrid,tokens} from './model.js';
 const names={U:'顶',D:'底',F:'前',B:'后',R:'右',L:'左'};

@@ -1,8 +1,8 @@
-import {t,tr,caseName,getLanguage,initLanguage} from './i18n.js';
+import {t,tr,caseName,getLanguage,initLanguage} from './i18n.js?v=20261117-cards';
 import * as THREE from 'three';
 import {OrbitControls} from './vendor/OrbitControls.js';
 import {cases} from './data.js';
-import {lesson} from './lesson.js?v=20261117-i18n';
+import {lesson} from './lesson.js?v=20261117-cards';
 import {colors,solved,tokens,invert,spec,affected,move,setup,faceGrid} from './model.js';
 const $=s=>document.querySelector(s);
 const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback;}catch{return fallback;}};

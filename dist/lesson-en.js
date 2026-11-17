@@ -1,5 +1,5 @@
 import {faceGrid,tokens} from './model.js';
-import {t} from './i18n.js';
+import {t} from './i18n.js?v=20261117-cards';
 const beginner={
 cross:['Watch the white-green edge. Match it with the green center, then send it down with F2.','This is a single-edge example. A real cross needs all four white edges on the bottom, with their side colors matching the centers.'],
 pair:['An already paired corner and edge can be inserted into the front-right slot.',"U positions the pair; R opens the slot, U' moves the pair in, and R' closes it. Keep the pair together."],

@@ -1,14 +1,17 @@
 <div align="center">
 
-<img src="docs/images/cube-lab-mark.svg" width="96" alt="CUBEFLOW four-stage cycle">
-
-# CUBEFLOW
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/cube-lab-banner-en-dark.svg">
+  <img src="docs/images/cube-lab-banner-en.svg" width="860" alt="CUBEFLOW — Find your flow, one turn at a time.">
+</picture>
 
 **Understand every turn. Build a smoother solve.**
 
-[简体中文](README.md) · **English**
+**English** · [简体中文](README.zh-CN.md)
 
-[Play online](https://bobo8886.github.io/cube-lab/) · [Download source](https://github.com/bobo8886/cube-lab/archive/refs/heads/main.zip) · [MIT License](LICENSE)
+[![119 CFOP cases](docs/images/badge-cases.svg)](#learn-in-motion) [![Three.js](docs/images/badge-three.svg)](docs/DEVELOPMENT.md) [![MIT License](docs/images/badge-license.svg)](LICENSE)
+
+[![Play online](docs/images/button-play-en.svg)](https://bobo8886.github.io/cube-lab/) [![Get source](docs/images/button-download-en.svg)](https://github.com/bobo8886/cube-lab/archive/refs/heads/main.zip) [![Quick guide](docs/images/button-guide-en.svg)](#controls-and-data)
 
 </div>
 
@@ -16,7 +19,7 @@ An interactive CFOP learning lab with **41 F2L, 57 OLL and 21 PLL cases**, 3D pl
 
 ## Choose your language
 
-On your first visit, choose **简体中文** or **English** in the welcome dialog. Chinese is selected by default. Your choice stays in this browser. Use the language button in the header to switch anytime without losing playback position, learned cases or practice times.
+On your first visit, select the **中文** or **English** card in the welcome dialog. The continue button follows the selected language. Chinese is selected by default. Your choice stays in this browser. Use the language button in the header to switch anytime without losing playback position, learned cases or practice times.
 
 Navigation, recognition tips, explanations, case names, move directions and timer controls are available in both languages. Standard cube notation stays the same.
 

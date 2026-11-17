@@ -87,11 +87,21 @@ export function initLanguage(onChange){
  const walker=document.createTreeWalker(document.documentElement,NodeFilter.SHOW_TEXT);
  while(walker.nextNode()){const node=walker.currentNode;if(node.parentElement.closest('script,style,#language-dialog'))continue;const key=node.textContent.trim();if(dictionary[key])staticText.push({node,original:node.textContent,key});}
  document.querySelectorAll('[aria-label],[title],[placeholder],meta[name="description"]').forEach(el=>{for(const attr of ['aria-label','title','placeholder','content']){const value=el.getAttribute(attr);if(value&&dictionary[value])staticAttrs.push({el,attr,value});}});
- const dialog=document.querySelector('#language-dialog'),select=document.querySelector('#language-choice'),trigger=document.querySelector('#language-toggle');
+ const dialog=document.querySelector('#language-dialog'),choices=[...dialog.querySelectorAll('input[name="language"]')],trigger=document.querySelector('#language-toggle');
+ let pendingLanguage=language;
+ function showChoice(){
+  for(const choice of choices)choice.checked=choice.value===pendingLanguage;
+  const english=pendingLanguage==='en';
+  document.querySelector('#language-title').textContent=english?'Choose your language':'选择语言';
+  document.querySelector('#language-description').textContent=english?'You can change your language anytime in the header.':'默认中文，之后可随时在顶部切换。';
+  document.querySelector('#language-legend').textContent=english?'Language':'语言';
+  document.querySelector('#language-submit').textContent=english?'Start learning →':'开始学习 →';
+ }
+ for(const choice of choices)choice.addEventListener('change',()=>{pendingLanguage=choice.value;showChoice();});
  function apply(){document.documentElement.lang=language==='en'?'en':'zh-CN';for(const {node,original,key} of staticText)if(node.isConnected)node.textContent=language==='en'?original.replace(key,dictionary[key]):original;for(const {el,attr,value} of staticAttrs)el.setAttribute(attr,t(value));trigger.textContent=language==='en'?'EN / 中文':'中文 / EN';trigger.setAttribute('aria-label',tr('选择语言','Choose language'));onChange();}
- function open(){select.value=language;dialog.showModal();}
- function commit(){language=select.value==='en'?'en':'zh';try{localStorage.setItem('cube-language',language);}catch{}apply();dialog.close();trigger.focus();}
+ function open(){pendingLanguage=language;showChoice();dialog.showModal();}
+ function commit(){language=pendingLanguage;try{localStorage.setItem('cube-language',language);}catch{}apply();dialog.close();trigger.focus();}
  trigger.onclick=open;document.querySelector('#language-form').onsubmit=e=>{e.preventDefault();commit();};
- dialog.addEventListener('cancel',e=>{e.preventDefault();select.value=language;commit();});
+ dialog.addEventListener('cancel',e=>{e.preventDefault();pendingLanguage=language;commit();});
  apply();let saved=null;try{saved=localStorage.getItem('cube-language');}catch{}if(saved!=='en'&&saved!=='zh')open();
 }
