@@ -48,3 +48,7 @@ Three.js 0.170.0 与 OrbitControls 已放在 vendor，无运行时 CDN 依赖。
 完整公式数据来自 research/*-cases.json；执行 node build-catalog.mjs 生成 dist/catalog.js。动画统一白底黄顶起始握持，必要时在原公式末尾补回转体，并在解析注明。
 
 2026-11-17 UI 更新验证：119 个完整案例和 19 个入门示例通过状态/唯一性校验；浏览器检查了桌面与 390px 移动布局、浅深色主题、公式点击定位、进度条、整段播放和复制公式，移动端无横向溢出。
+
+## GitHub Pages 发布
+
+推送到 `main` 后，`.github/workflows/pages.yml` 自动校验公式并将 `dist/` 部署到 https://bobo8886.github.io/cube-lab/ 。网站无需登录。

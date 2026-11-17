@@ -1,6 +1,6 @@
-# 方序 UI 更新
+# 轻拧 UI 更新
 
-设计方向：保留方序品牌、绿色主色与原有学习结构，采用清晰、克制的现代学习工具界面。原生 CSS，保留现有 HTML / ES modules / Three.js，不为视觉改版迁移框架。
+设计方向：保留轻拧品牌、绿色主色与原有学习结构，采用清晰、克制的现代学习工具界面。原生 CSS，保留现有 HTML / ES modules / Three.js，不为视觉改版迁移框架。
 
 设计参数：DESIGN_VARIANCE 6，MOTION_INTENSITY 4，VISUAL_DENSITY 4。交互区保持信息密度，首页增加留白；动画用于切换、反馈与分层转动。
 

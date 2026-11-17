@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/images/cube-lab-banner-dark.svg">
-  <img src="docs/images/cube-lab-banner.svg" alt="方序 · CUBE LAB — 把每一步，拧明白。" width="860">
+  <img src="docs/images/cube-lab-banner.svg" alt="轻拧 · CUBEFLOW — 把每一步，拧明白。" width="860">
 </picture>
 
 **从看懂公式，到流畅复原。**
@@ -13,7 +13,7 @@
 [![Three.js 0.170.0](docs/images/badge-three.svg)](docs/DEVELOPMENT.md)
 [![MIT License](docs/images/badge-license.svg)](LICENSE)
 
-[![在线试玩](docs/images/button-play.svg)](https://cube-lab-cfop-20261117.lustrouswatermelon.chatgpt.site)
+[![在线试玩](docs/images/button-play.svg)](https://bobo8886.github.io/cube-lab/)
 [![下载源码](docs/images/button-download.svg)](https://github.com/bobo8886/cube-lab/archive/refs/heads/main.zip)
 [![使用指南](docs/images/button-guide.svg)](docs/USER_GUIDE.md)
 
@@ -21,9 +21,9 @@
 
 </div>
 
-> **在线试玩**：当前演示站需使用有访问权限的 ChatGPT 账号登录。也可以下载源码在本地运行。仓库访问权限与软件许可证是两回事。
+> **打开即用**：GitHub Pages 公开托管，无需注册或登录。电脑、手机都可以直接打开试玩。
 
-![方序桌面首页：绿色主题、真实 3D 魔方与 CFOP 学习入口](docs/images/homepage.png)
+![轻拧桌面首页：绿色主题、真实 3D 魔方与 CFOP 学习入口](docs/images/homepage.png)
 
 ## ✨ 让公式变成看得见的动作
 
@@ -51,7 +51,7 @@
 
 ### 在线体验
 
-打开 **[方序 · 在线试玩 ↗](https://cube-lab-cfop-20261117.lustrouswatermelon.chatgpt.site)**，选择阶段与案例后点击播放。当前站点需账号访问权限。
+打开 **[轻拧 · 在线试玩 ↗](https://bobo8886.github.io/cube-lab/)**，选择阶段与案例后点击播放。无需注册或登录。
 
 ### 本地运行
 
@@ -65,7 +65,7 @@ python -m http.server 4173 --directory dist
 
 然后打开 **http://localhost:4173**。也可下载上方源码 ZIP，解压后在项目目录运行最后一条命令。
 
-无需 npm 安装或构建。页面使用 ES 模块，请通过 HTTP 服务访问，不要直接双击 HTML。首次获取私有仓库源码需要 GitHub 访问权限；下载后运行不依赖 GitHub 登录。
+无需 npm 安装或构建。页面使用 ES 模块，请通过 HTTP 服务访问，不要直接双击 HTML。源码公开，下载和运行均无需登录。
 
 ## 🎛️ 常用操作
 
@@ -126,7 +126,7 @@ Three.js / OrbitControls 遵循其原有 MIT 许可；外部教程、文章、�
 
 <div align="center">
 
-**方序 · CUBE LAB** · 由 [bobo8886](https://github.com/bobo8886) 维护<br>
+**轻拧 · CUBEFLOW** · 由 [bobo8886](https://github.com/bobo8886) 维护<br>
 把公式看明白，把复原练流畅。
 
 </div>
