@@ -1,0 +1,10 @@
+export const colors={R:'#df5748',L:'#ed923d',U:'#ebd249',D:'#f1f2e9',F:'#42a57a',B:'#4d83cf'};
+export function solved(){const pieces=[];for(let x=-1;x<=1;x++)for(let y=-1;y<=1;y++)for(let z=-1;z<=1;z++){if(!x&&!y&&!z)continue;let stickers=[];for(const [face,n] of Object.entries({R:[1,0,0],L:[-1,0,0],U:[0,1,0],D:[0,-1,0],F:[0,0,1],B:[0,0,-1]}))if(x*n[0]+y*n[1]+z*n[2]===1)stickers.push({face,n});pieces.push({p:[x,y,z],stickers});}return pieces;}
+export const tokens=alg=>alg.trim().split(/\s+/).filter(Boolean);
+export const invert=t=>t.includes('2')?t:t.includes("'")?t[0]:t+"'";
+export function spec(t){const defs={R:[0,1,-1],L:[0,-1,1],U:[1,1,-1],D:[1,-1,1],F:[2,1,-1],B:[2,-1,1],M:[0,0,1],r:[0,1,-1],f:[2,1,-1]};const [axis,layer,sign]=defs[t[0]];return {axis,layer,angle:sign*(t.includes('2')?2:t.includes("'")?-1:1)*Math.PI/2,wide:/[rf]/.test(t[0])};}
+export function affected(piece,s){return s.wide?piece.p[s.axis]>=0:piece.p[s.axis]===s.layer;}
+function rotate(v,axis,a){let [x,y,z]=v,c=Math.round(Math.cos(a)),s=Math.round(Math.sin(a));return(axis===0?[x,c*y-s*z,s*y+c*z]:axis===1?[c*x+s*z,y,-s*x+c*z]:[c*x-s*y,s*x+c*y,z]).map(Math.round);}
+export function move(state,t){const s=spec(t);for(const p of state)if(affected(p,s)){p.p=rotate(p.p,s.axis,s.angle);for(const sticker of p.stickers)sticker.n=rotate(sticker.n,s.axis,s.angle);}return state;}
+export function setup(alg){let s=solved();for(const t of tokens(alg).reverse())move(s,invert(t));return s;}
+export function faceGrid(state,face){let grid=Array(9);const axis={R:0,L:0,U:1,D:1,F:2,B:2}[face],sign=/[RUF]/.test(face)?1:-1;for(const p of state)for(const s of p.stickers)if(s.n[axis]===sign){const [x,y,z]=p.p;let col,row;if(face==='U'){col=x+1;row=z+1;}if(face==='D'){col=x+1;row=1-z;}if(face==='F'){col=x+1;row=1-y;}if(face==='B'){col=1-x;row=1-y;}if(face==='R'){col=1-z;row=1-y;}if(face==='L'){col=z+1;row=1-y;}grid[row*3+col]=s.face;}return grid;}
